@@ -1,0 +1,25 @@
+.footer {
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    border-top: 2px solid #B19CD9;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+/* Default styling for desktop and tablets */
+.footer-content,
+.rights {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Specific styling for mobile devices */
+@media (max-width: 600px) {
+    .footer-content,
+    .rights {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+}

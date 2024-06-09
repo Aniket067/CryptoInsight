@@ -1,0 +1,145 @@
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.coinSpinner {
+    display: grid;
+    place-content: center;
+    min-height: 80vh;
+    background-color: #f4f4f9;
+}
+
+.coinSpin {
+    width: 65px;
+    height: 65px;
+    border: 5px solid #bdbdbd;
+    border-top-color: #4500c6;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+.coinContainer {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.coinName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.coinName img {
+    max-width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.coinName img:hover {
+    transform: scale(1.1);
+}
+
+.coinName p b {
+    font-size: 44px;
+    color: #4500c6;
+}
+
+.coinChart {
+    max-width: 800px;
+    height: 350px;
+    margin: 0 auto 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.coinInfo {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.coinInfo ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.coinInfo ul:last-child {
+    border-bottom: none;
+}
+
+.coinInfo ul li:first-child {
+    font-weight: bold;
+    color: #4500c6;
+}
+
+.coinInfo ul li:last-child {
+    font-weight: 300;
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .coinChart {
+        height: 300px;
+        padding: 15px;
+    }
+    
+    .coinInfo ul {
+        font-size: 16px;
+    }
+
+    .coinName p b {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coinChart {
+        height: 250px;
+        padding: 10px;
+    }
+    
+    .coinInfo ul {
+        font-size: 14px;
+    }
+
+    .coinName p b {
+        font-size: 28px;
+    }
+}

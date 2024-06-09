@@ -1,0 +1,132 @@
+.home {
+    padding: 0 10px;
+    padding-bottom: 100px;
+}
+
+.hero {
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero h1 {
+    font-size: max(4vw, 36px);
+}
+
+.hero p {
+    width: 75%;
+    line-height: 1.5;
+    color: #fdfcfc;
+}
+
+.hero form {
+    display: flex;
+    width: 80%;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero input {
+    flex: 1;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.hero button {
+    border: none;
+    background: #9069ba;
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #a47bcb; /* Slightly lighter shade for hover effect */
+}
+
+.crypto-table {
+    max-width: 800px;
+    margin: auto;
+    background: #9069ba;
+    border-radius: 15px;
+}
+
+.table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1.5fr; /* Adjusted the grid columns */
+    padding: 15px 20px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.market-cap {
+    text-align: right;
+    position: absolute;
+    left: 69%;
+}
+.table-layout:last-child{
+    border: none;
+}
+.table-layout div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.table-layout div img{
+    width: 35px;
+}
+.table-layout .green{
+     color: rgb(8, 249, 8);
+   
+}
+
+.table-layout .red{
+    color: rgb(255, 69, 58);
+    /* position: absolute; */
+    /* left: 60.2%; */
+
+}
+
+
+@media (max-width:768px){
+    .table-layout
+    
+    {
+        grid-template-columns: 0.5fr 3fr  1fr 1fr();
+    }
+    .market-cap{
+        display: none;
+    }
+    .table-layout .red{
+         color: rgb(255, 69, 58);
+        /* position: absolute;
+        left: 60.2%; */
+    
+    }
+}
+@media (max-width:500px)
+{
+    .table-layout div img{
+        width: 25px;
+    }
+    .table-layout{
+        font-size: 12px;
+
+    }
+    .hero form input{
+        width: 100px;
+    }
+} 
