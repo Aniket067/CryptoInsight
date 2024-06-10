@@ -2,6 +2,8 @@
 
 CryptoInsight is a comprehensive web application for tracking and analyzing cryptocurrency data. Utilizing the CoinGecko API, CryptoInsight offers real-time information about various cryptocurrencies, charts, and key values.
 
+You can view the live application [here](https://aniket067.github.io/CryptoInsight/).
+
 ## Features
 
 - **Real-time Cryptocurrency Data:** Fetch up-to-date information on various cryptocurrencies using the CoinGecko API.
